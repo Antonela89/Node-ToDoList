@@ -4,40 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tareas</title>
+    <title>Tareas - JS 07</title>
+    <link rel="stylesheet" href="./css/style.css"/>    
 </head>
 <body>
     <h1>Tareas</h1>
-    <form action="">
-        <input id="text" type="text">
+    <form>
+        <input type="hidden" id="id" value="">
+        <input id="text" type="text" required>
         <button type="submit">Guardar</button>
     </form>
     <hr/>
     <table>
-        <tr>
-            <td>Tarea 1</td>
-            <td>
-                <button>Completar</button>
-                <button>Editar</button>
-                <button>Guardar</button>
-            </td>
-        </tr>
-        <tr>
-            <td>Tarea 2</td>
-            <td>
-                <button>Completar</button>
-                <button>Editar</button>
-                <button>Guardar</button>
-            </td>
-        </tr>
-        <tr>
-            <td>Tarea 3</td>
-            <td>
-                <button>Completar</button>
-                <button>Editar</button>
-                <button>Guardar</button>
-            </td>
-        </tr>
+        <tbody></tbody>
     </table>
 
     <script src="./js/script.js"></script>
