@@ -12,9 +12,9 @@ form.addEventListener('submit', (event) => { //pongo a "escuchar" al form el eve
     console.log(inputId.value)
 
     if(inputId.value) { // establezco un condicional if - condición (si hay valor de inputI hace el forEach, por default arranca en vacio - falso)
-        tareas.forEach(tarea => { //recorre a tareas y por cada elemento (tarea) establece una condicion ()
-            if(tarea.id == inputText.value) { //si el id de tarea es igual al valor de inputText
-                tarea.text = inputText.value; //asigno el valor de inputText a la clave text de tarea (es un objeto)
+        tareas.forEach(tarea => { //recorre a tareas y por cada elemento (tarea) establece una condicion
+            if(tarea.id == inputId.value) { //si el id de tarea es igual al valor de inputId es porque la tarea ya existe (es para editar)
+                tarea.text = inputText.value; //asigno el valor de inputText a la clave text de tarea (es un objeto) (edito)
             }
          });
     } else {
@@ -78,7 +78,7 @@ const renderTareas = ( ) => {
         if(tarea) {  // si la tarea es encontrada, genero dos constantes inputId e inputText
             const inputId = document.querySelector("#id");
             inputId.value = tarea.id; //al value de inputId le asigno el id de la tarea
-            const inputText = document.querySelector8("#text");
+            const inputText = document.querySelector("#text");
             inputText.value = tarea.text; // al value de inputText le asigno el contenido de la clave text de la tarea
         }
     }
